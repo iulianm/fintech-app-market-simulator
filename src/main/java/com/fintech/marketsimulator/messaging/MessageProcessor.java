@@ -5,13 +5,11 @@ import com.fintech.marketsimulator.model.MarketPriceBuilder;
 import com.fintech.marketsimulator.websocket.config.SchedulerConfig;
 import org.apache.activemq.command.ActiveMQQueue;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
 import javax.jms.Queue;
-import java.math.BigDecimal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Map;
@@ -21,9 +19,6 @@ public class MessageProcessor {
 
     @Autowired
     private SchedulerConfig schedulerConfig;
-
-//    @Value("${fleetman.position.queue}")
-//    private String queueName;
 
     @Bean
     public Queue queue() {

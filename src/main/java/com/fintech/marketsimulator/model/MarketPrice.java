@@ -1,7 +1,6 @@
 package com.fintech.marketsimulator.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-//import java.math.BigDecimal;
 import java.util.Date;
 
 public class MarketPrice {
